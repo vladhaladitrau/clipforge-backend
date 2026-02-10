@@ -1,0 +1,4 @@
+AppData/
+*.zip
+.conda/
+.vscode/
