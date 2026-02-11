@@ -17,7 +17,9 @@ logger = logging.getLogger(__name__)
 
 # Initialize API clients
 aai.settings.api_key = os.environ.get("ASSEMBLYAI_API_KEY")
-openai_client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+openai_client = OpenAI(
+    api_key=os.environ.get("OPENAI_API_KEY")
+)
 
 @app.route('/health', methods=['GET'])
 def health_check():
